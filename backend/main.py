@@ -32,32 +32,28 @@ app.mount(
 async def get_home(request: Request):  # modify to show index.html
     return templates.TemplateResponse("index.html", {"request": request})
 
-
-@app.get("/home", response_class=HTMLResponse)
-async def get_home_2(request: Request):  # modify to show index.html
-    return templates.TemplateResponse("index.html", {"request": request})
-
+# Removed /home
 
 @app.get("/items", response_class=HTMLResponse)
-async def get_items(request: Request):  # modify to show index.html
+async def get_items(request: Request):  # modify to show items.html
     return templates.TemplateResponse("items.html", {"request": request})
 
 
 @app.get("/analytics", response_class=HTMLResponse)
-async def get_analytics(request: Request):  # modify to show index.html
+async def get_analytics(request: Request):  # modify to show analytics.html
     return templates.TemplateResponse("analytics.html", {"request": request})
 
 
 @app.get("/news", response_class=HTMLResponse)
-async def get_news(request: Request):  # modify to show index.html
+async def get_news(request: Request):  # modify to show news.html
     return templates.TemplateResponse("news.html", {"request": request})
 
 
 @app.get("/quiz", response_class=HTMLResponse)
-async def get_quiz(request: Request):  # modify to show index.html
+async def get_quiz(request: Request):  # modify to show quiz.html
     return templates.TemplateResponse("quiz.html", {"request": request})
 
 
 @app.get("/profile", response_class=HTMLResponse)
-async def get_profile(request: Request):  # modify to show index.html
+async def get_profile(request: Request):  # modify to show profile.html
     return templates.TemplateResponse("profile.html", {"request": request})
