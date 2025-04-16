@@ -64,9 +64,9 @@ async def get_question():
 async def submit_answer(
     data: AnswerRequest,
 ):  # We need to use a pydantic model to let FASTAPI know how to parse the data
-    question_id = data.get("id")
-    answer = data.get("answer")
-    score = data.get("score", 0)
+    question_id = data.id # attribute access, not dict
+    answer = data.answer # attribute access, not dict
+    score = data.score # attribute access, not dict
 
     question = next((q for q in questions if q["id"] == question_id), None)
     if not question:

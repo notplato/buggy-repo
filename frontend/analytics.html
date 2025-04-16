@@ -1,27 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Analytics</title>
-    <!-- modify for the styles to work -->
-    <link rel="stylesheet" href="/static/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Did I GPT this code???-->
-      <h1>📊 Analytics</h1>
-      <div id="stats">
-        <p>Items: <span id="itemCount">0</span></p>
-        <p>Users: <span id="userCount">0</span></p>
-        <p>Avg Item Name Length: <span id="avgItemName">0</span></p>
-        <p>Avg Username Length: <span id="avgUserName">0</span></p>
-        <p>Max Item Name Length: <span id="maxItemName">0</span></p>
-        <p>Max Username Length: <span id="maxUserName">0</span></p>
-      </div>
-      <img id="plot" src="" alt="Analytics Plot" style="max-width: 100%" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Analytics</title>
+  <!-- modify for the styles to work -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Did I GPT this code???-->
+	<!--navigation bar was missing, added it with links to all pages-->
+    <nav>
+      <a href="/">Home</a>
+      <a href="items">Items</a>
+      <a href="profile">Profile</a>
+      <a href="analytics">Analytics</a>
+      <a href="news">News</a>
+      <a href="quiz">Quiz</a>
+    </nav>
+    <h1>📊 Analytics</h1>
+    <div id="stats">
+      <p>Items: <span id="itemCount">0</span></p>
+      <p>Users: <span id="userCount">0</span></p>
+      <p>Avg Item Name Length: <span id="avgItemName">0</span></p>
+      <p>Avg Username Length: <span id="avgUserName">0</span></p>
+      <p>Max Item Name Length: <span id="maxItemName">0</span></p>
+      <p>Max Username Length: <span id="maxUserName">0</span></p>
     </div>
-
-    <script src="scripts/analytics.js"></script>
-  </body>
+  <script src="scripts/analytics.js"></script>
+</body>
 </html>
-
