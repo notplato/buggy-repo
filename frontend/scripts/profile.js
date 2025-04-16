@@ -45,7 +45,8 @@ document.getElementById("search").addEventListener("input", async (e) => {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.onclick = async () => {
-      await fetch(`${baseURL}/users/${user._id}`, { method: "DELETE" });              // Method was PATCH
+      await fetch(`${baseURL}/users/${user._id}`, { method: "DELETE" });              
+// Method was PATCH
       loadUsers();
     };
 
