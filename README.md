@@ -32,31 +32,31 @@
 
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
-| 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
-| 2   |                                          |               |              |
-| 3   |                                          |               |              |
-| 4   |                                          |               |              |
-| 5   |                                          |               |              |
-| 6   |                                          |               |              |
-| 7   |                                          |               |              |
-| 8   |                                          |               |              |
-| 9   |                                          |               |              |
-| 10  |                                          |               |              |
-| 11  |                                          |               |              |
-| 12  |                                          |               |              |
-| 13  |                                          |               |              |
-| 14  |                                          |               |              |
-| 15  |                                          |               |              |
-| 16  |                                          |               |              |
-| 17  |                                          |               |              |
-| 18  |                                          |               |              |
-| 19  |                                          |               |              |
-| 20  |                                          |               |              |
-| 21  |                                          |               |              |
-| 22  |                                          |               |              |
-| 23  |                                          |               |              |
-| 24  |                                          |               |              |
-| 25  |                                          |               |              |
+| 1   | Style.css is not filled                  |    Siddarth   |   Siddarth   |
+| 2   | Home symbol is wrong                     |      Sian     |     Sian     |
+| 3   | Fixing navigation bar for all sections   |      Sian     |Sian & Kaushik|
+| 4   | News filtering and searching not working |     Abdul     |              |
+| 5   | Users don't get added                    |     Abdul     |              |
+| 6   | Item inherit from base model             |   Srinivas    |   Srinivas   |
+| 7   | Adding __init__.py to routes             |    Kaushik    |   Kaushik    |
+| 8   | Connected all Jinja templates with FAST  |    Kaushik    |   Kaushik    |
+| 9   | Multiple router.post functions in user.py|   Srinivas    |   Srinivas   |
+| 10  | Remove extra post method code in items.py|   Srinivas    |   Srinivas   |
+| 11  | Empty src for image in analytics.html    |      Sian     |     Sian     |
+| 12  | Users should be initialised to empty in analytics.py |   Kaushik   |   Kaushik    |
+| 13  | Analytics endpoint to return image       |    Srinivas   |   Srinivas   |
+| 14  | Generating the same question each time   |    Srinivas   |   Srinivas   |
+| 15  | Answer should be a post request in quiz.py|    Srinivas   |   Srinivas   |
+| 16  | FastAPI cannot parse a dictionary properly|    Srinivas   |   Srinivas   |
+| 17  | Port should be 8000 in analytics.js      |      Abdul    |     Abdul    |
+| 18  | BaseURL isn't present in profile.js      |      Sian     |    Sian      |
+| 19  | Element ID should be userCounts          |      Sian     |    Sian      |
+| 20  | PATCH method is wrongly used in profile.js |      Abdul    |    Abdul     |
+| 21  | POST method was used instead of DELETE in items.js |    Abdul    |   Abdul     |
+| 22  | application/html changed to application/json in items.js |     Abdul      |    Abdul     |
+| 23  | Modified the js to work with FAST |    Kaushik    |    Kaushik      |
+| 24  | Deleting home.js because it has no purpose |    Srinivas  |   Srinivas  |
+| 25  | Changed styles/profile.js to scripts/profile.js in profile.html  |    Siddarth      |   Siddarth     |
 | 26  |                                          |               |              |
 | 27  |                                          |               |              |
 | 28  |                                          |               |              |
