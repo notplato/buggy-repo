@@ -1,6 +1,9 @@
+// defined baseURL, was not declared before
+// prefixed baseURL to the links so that they work
+const baseURL = "http://localhost:8000";
 
 async function loadUsers() {
-  const res = await fetch(`/users`);
+  const res = await fetch(`${baseURL}/users`);
   const users = await res.json();
   const list = document.getElementById("userList");
   list.innerHTML = "";
@@ -42,7 +45,7 @@ document.getElementById("search").addEventListener("input", async (e) => {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.onclick = async () => {
-      await fetch(`/users/${user._id}`, { method: "DELETE" });              // Method was PATCH
+      await fetch(`${baseURL}/users/${user._id}`, { method: "DELETE" });              // Method was PATCH
       loadUsers();
     };
 
@@ -57,7 +60,7 @@ document.getElementById("userForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const username = document.getElementById("username").value;
   const bio = document.getElementById("bio").value;
-  await fetch(`/users`, {
+  await fetch(`${baseURL}/users`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, bio })
