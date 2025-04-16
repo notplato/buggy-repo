@@ -4,8 +4,9 @@ async function loadUsers() {
   const users = await res.json();
   const list = document.getElementById("userList");
   list.innerHTML = "";
-  
-  document.getElementById("userCount").textContent = `Total users: ${users.length}`;
+
+  // fixed element id from userCount to userCounts
+  document.getElementById("userCounts").textContent = `Total users: ${users.length}`;
   // why did I give such a weird task
   users.forEach(user => {
     const li = document.createElement("li");
@@ -31,7 +32,8 @@ document.getElementById("search").addEventListener("input", async (e) => {
   list.innerHTML = "";
 
   const filteredUsers = users.filter(user => user.username.toLowerCase().includes(term));
-  document.getElementById("userCount").textContent = `Total users: ${filteredUsers.length}`;
+  // fixed element id from userCount to userCounts
+  document.getElementById("userCounts").textContent = `Total users: ${filteredUsers.length}`;
 
   filteredUsers.forEach(user => {
     const li = document.createElement("li");
