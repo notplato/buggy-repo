@@ -1,2 +1,42 @@
-Aah I was too lazy to implement this
+/*Aah I was too lazy to implement this
 You can do it
+*/
+/*minor css added*/
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: #F4F4F4;
+	color: #000000;
+}
+
+
+nav {
+	background: #005485;
+	font-family: inherit;
+	font-size: 1.25rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+
+nav a{
+	color: #f4f4f4;
+	margin: 0 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #bbbbbb;
+	font-weight: bold;
+}
+
+nav a:active {
+	color: #AA2222;
+	font-weight: bold;
+}
+
+
+
