@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Request  # add request to use
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -8,9 +9,17 @@ from routes.quiz import router as quiz_router
 
 app = FastAPI()
 
+app.add_middleware( # added cors support
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
+
 app.include_router(items_router, prefix="/items")
-app.include_router(analytics_router)
-app.include_router(quiz_router)
+app.include_router(analytics_router, prefix="/analytics") # fixed this added prefix paths
+app.include_router(quiz_router, prefix="/quiz") # maybe fixed this and cors issue
 
 templates = Jinja2Templates(directory="../frontend/")
 app.mount(
