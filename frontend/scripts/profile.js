@@ -1,3 +1,5 @@
+// defined baseURL, was not declared before
+const baseURL = "http://localhost:8000";
 
 async function loadUsers() {
   const res = await fetch(`/users`);
